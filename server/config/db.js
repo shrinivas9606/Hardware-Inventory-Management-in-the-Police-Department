@@ -1,5 +1,7 @@
 // server/config/db.js
 const mongoose = require('mongoose');
+mongoose.set('debug', true); // Add this to your db.js to enable debugging
+
 require('dotenv').config();
 const connectDB = async () => {
     try {
